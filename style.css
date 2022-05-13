@@ -1,0 +1,92 @@
+.container_mainmenu {
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.item1 img,.item2 img {
+	border: 2px solid black;
+	border-radius: 7px;
+	width: 65%;
+}
+
+.product {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+}
+.card {
+	width: 85%;
+	margin: auto;
+}
+
+.footer {
+	background-color: lightblue;
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.footer p {
+	padding-top: 40px;
+}
+
+.card-body button {
+	border-radius: 7px;
+	border: none;
+	padding: 5px;
+	background-color: #b0f5c3;
+}
+
+.card-body button a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.card-body button:hover {
+	text-decoration: underline;
+}
+
+.card img.kue_sagu, .card img.kembang_goyang, .card img.Nastar {
+	height: 155px;
+}
+
+@media screen and (max-width: 1000px) {
+	.product {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
+
+	.card {
+		width: 85%;
+	}
+
+	.item1 img, .item2 img {
+		width: 80%;
+	}
+
+	.card img.kue_sagu, .card img.kembang_goyang, .card img.Nastar {
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.container_mainmenu {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 10px;
+	}
+
+	.product {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 10px;
+	}
+
+	.product .card {
+		width: 81%;
+	}
+}
+
